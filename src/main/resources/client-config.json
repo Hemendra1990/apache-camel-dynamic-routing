@@ -1,0 +1,134 @@
+{
+    "clientConfigs":[
+        {
+            "clientName": "GoRest",
+            "baseUrl": "https://gorest.co.in/public",
+            "resources": [
+                {
+                    "name": "users",
+                    "endpoints": [
+                        {
+                            "name": "getUsers",
+                            "method": "GET",
+                            "path": "/users"
+                        },
+                        {
+                            "name": "getUser",
+                            "method": "GET",
+                            "path": "/users/{id}"
+                        },
+                        {
+                            "name": "createUser",
+                            "method": "POST",
+                            "path": "/users"
+                        },
+                        {
+                            "name": "updateUser",
+                            "method": "PUT",
+                            "path": "/users/{id}"
+                        },
+                        {
+                            "name": "deleteUser",
+                            "method": "DELETE",
+                            "path": "/users/{id}"
+                        }
+                    ]
+                },
+                {
+                    "name": "posts",
+                    "endpoints": [
+                        {
+                            "name": "getPosts",
+                            "method": "GET",
+                            "path": "/posts"
+                        },
+                        {
+                            "name": "getPost",
+                            "method": "GET",
+                            "path": "/posts/{id}"
+                        },
+                        {
+                            "name": "createPost",
+                            "method": "POST",
+                            "path": "/posts"
+                        },
+                        {
+                            "name": "updatePost",
+                            "method": "PUT",
+                            "path": "/posts/{id}"
+                        },
+                        {
+                            "name": "deletePost",
+                            "method": "DELETE",
+                            "path": "/posts/{id}"
+                        }
+                    ]
+                },
+                {
+                    "name": "comments",
+                    "endpoints": [
+                        {
+                            "name": "getComments",
+                            "method": "GET",
+                            "path": "/comments"
+                        },
+                        {
+                            "name": "getComment",
+                            "method": "GET",
+                            "path": "/comments/{id}"
+                        },
+                        {
+                            "name": "createComment",
+                            "method": "POST",
+                            "path": "/comments"
+                        },
+                        {
+                            "name": "updateComment",
+                            "method": "PUT",
+                            "path": "/comments/{id}"
+                        },
+                        {
+                            "name": "deleteComment",
+                            "method": "DELETE",
+                            "path": "/comments/{id}"
+                        }
+                    ]
+                }
+            ],
+            "auth": {
+                "type": "Bearer",
+                "token": "YOUR_TOKEN",
+                "tokenLocation": "header",
+                "tokenName": "Authorization"
+            }
+        },
+        {
+            "clientName": "HttpBin",
+            "baseUrl": "http://localhost:8977",
+            "resources": [
+                {
+                    "name": "getUuid",
+                    "endpoints": [
+                        {
+                            "name": "getUuid",
+                            "method": "GET",
+                            "path": "/uuid"
+                        },
+                        {
+                            "name": "getImage",
+                            "method": "GET",
+                            "path": "/image"
+                        }
+
+                    ]
+                }
+            ],
+            "auth": {
+                "type": "Bearer",
+                "token": "YOUR_TOKEN",
+                "tokenLocation": "header",
+                "tokenName": "Authorization"
+            }
+        }
+    ]
+}
